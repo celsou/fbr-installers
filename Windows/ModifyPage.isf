@@ -1,0 +1,99 @@
+object WizardForm: TISCustomForm
+  Left = 40
+  Top = 72
+  Width = 413
+  Height = 237
+  DesignPanel = frmISWizardPage.elDesignPanel
+  ShowLines = False
+  CodeEditorIndent = 2
+  CodeEditorCopyMode = 0
+  object InstallBitmapImage: TBitmapImage
+    Left = 0
+    Top = 40
+    Width = 64
+    Height = 64
+    ReplaceColor = clBlue
+    ReplaceWithColor = clWindow
+  end
+  object RemoveBitmapImage: TBitmapImage
+    Left = 0
+    Top = 128
+    Width = 64
+    Height = 64
+    ReplaceColor = 15790320
+    ReplaceWithColor = clWindow
+  end
+  object ModifyDescripton: TNewStaticText
+    Left = 0
+    Top = 0
+    Width = 413
+    Height = 29
+    Align = alTop
+    Caption = 
+      'J'#225' existe uma vers'#227'o da FBR instalada na pasta selecionada.'#13#10'O q' +
+      'ue voc'#234' deseja fazer?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    WordWrap = True
+  end
+  object InstallRadioButton: TRadioButton
+    Left = 72
+    Top = 48
+    Width = 281
+    Height = 17
+    Caption = 'Atualizar / Substituir vers'#227'o'
+    Checked = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    TabStop = True
+  end
+  object RemoveRadioButton: TRadioButton
+    Left = 72
+    Top = 136
+    Width = 281
+    Height = 17
+    Caption = 'Desinstalar FBR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object RemoveCaptionText: TNewStaticText
+    Left = 72
+    Top = 160
+    Width = 330
+    Height = 40
+    Align = alCustom
+    Caption = 
+      'Isto ir'#225' remover completamente a FBR j'#225' instalada no seu computa' +
+      'dor'
+    TabOrder = 3
+    WordWrap = True
+  end
+  object InstallCaptionText: TNewStaticText
+    Left = 72
+    Top = 72
+    Width = 330
+    Height = 40
+    Align = alCustom
+    AutoSize = False
+    Caption = 
+      'Isto ir'#225' substituir a vers'#227'o atualmente instalada por esta vers'#227 +
+      'o'
+    TabOrder = 4
+    WordWrap = True
+  end
+end
